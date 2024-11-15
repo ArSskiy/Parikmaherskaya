@@ -1,0 +1,47 @@
+﻿<Page x:Class="Parikmaherskaya.VedenieUcheta"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Parikmaherskaya"
+      mc:Ignorable="d" 
+      d:DesignHeight="780" d:DesignWidth="1300"
+      Title="VedenieUcheta">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="297*"/>
+            <ColumnDefinition Width="194*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Выберите дату" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"  />
+        <TextBlock Text="Выберите сотрудника" TextWrapping="Wrap" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" />
+        <TextBlock Text="Выберите производителя" TextWrapping="Wrap" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" />
+        <TextBlock Text="Выберите материал" TextWrapping="Wrap" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"  />
+        <TextBlock Text="Выберите цену" TextWrapping="Wrap" Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" />
+
+        <TextBox Name="PriceTb" Grid.Row="9" Grid.Column="2" HorizontalAlignment="Left" Width="220" FontSize="24"/>
+        <TextBox Name="QuantityTb" Grid.Row="9" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" FontSize="24"/>
+        <TextBlock Text="Введите количество"  TextWrapping="Wrap" Grid.Row="9" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="24" />
+        <Button Grid.Row="10" Grid.Column="3" Margin="10" Content="Добавить" FontSize="24" Click="Button_Click"/>
+
+        <DatePicker Grid.Row="1" Grid.Column="2" x:Name="DateP" FontSize="24"/>
+        <ComboBox Grid.Row="3" Grid.Column="2" Name="EmployeeCb" FontSize="24"/>
+        <ComboBox Grid.Row="5" Grid.Column="2" Name="ManufacCb" SelectionChanged="ManufacCb_SelectionChanged" FontSize="24"/>
+        <ComboBox Grid.Row="7" Grid.Column="2" Name="MaterialCb" FontSize="24"/>
+    </Grid>
+</Page>
