@@ -29,5 +29,7 @@ namespace Parikmaherskaya
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Manufacturer> Manufacturer { get; set; }
         public DbSet<Material> Material { get; set; }
+        public DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public DbSet<View_1> View_1 { get; set; }
     }
 }

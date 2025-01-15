@@ -24,7 +24,7 @@
                 <Separator Height="30" Opacity="0"/>
                 <Button Content="Ведение учета" HorizontalAlignment="Center" Width="240" Height="70" FontSize="20" Click="Button_Click_3"/>
                 <Separator Height="30" Opacity="0"/>
-                <Button Content="Отчёт" HorizontalAlignment="Center" Width="240" Height="70" FontSize="20"/>
+                <Button Content="Отчёт" HorizontalAlignment="Center" Width="240" Height="70" FontSize="20" Click="Button_Click_4" />
             </StackPanel>
         </Grid>
         <Frame Name="BodyMainFrame" Grid.Column="1"/>

@@ -48,5 +48,10 @@ namespace Parikmaherskaya
         {
             BodyMainFrame.Navigate(new VedenieUcheta());
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            BodyMainFrame.Navigate(new Uchet());
+        }
     }
 }
